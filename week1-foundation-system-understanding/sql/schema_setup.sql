@@ -36,7 +36,6 @@ INSERT INTO tntra_employees VALUES (112, 'Het Patel', 12500, 2, SYSDATE);
 INSERT INTO tntra_employees VALUES (113, 'Jay Parmar', 12500, 2, SYSDATE);
 INSERT INTO tntra_employees VALUES (114, 'Tanmay Dasgupta', 12500, 2, SYSDATE);
 
-
 INSERT INTO tntra_employees VALUES (115, 'Jeet Patel', 48000, 3, SYSDATE);
 INSERT INTO tntra_employees VALUES (116, 'Pranav Vichare', 47000, 3, SYSDATE);
 INSERT INTO tntra_employees VALUES (117, 'Vraj Patel', 46000, 3, SYSDATE);
@@ -44,10 +43,8 @@ INSERT INTO tntra_employees VALUES (118, 'Pranay Gupta', 50000, 3, SYSDATE);
 INSERT INTO tntra_employees VALUES (119, 'Tejas Chauhan', 49000, 3, SYSDATE);
 INSERT INTO tntra_employees VALUES (120, 'Ankit Agrawal', 51000, 3, SYSDATE);
 
-
 INSERT INTO tntra_employees VALUES (121, 'Jayminkumar Trivedi', 48000, 5, SYSDATE);
 INSERT INTO tntra_employees VALUES (122, 'Sagar Panpatil', 47000, 5, SYSDATE);
-
 
 INSERT INTO tntra_employees VALUES (123, 'Amin Tai', 50000, 4, SYSDATE);
 INSERT INTO tntra_employees VALUES (124, 'Harsh Rajput', 48000, 4, SYSDATE);
@@ -56,4 +53,3 @@ INSERT INTO tntra_employees VALUES (126, 'Kruti Makwana', 46000, 4, SYSDATE);
 INSERT INTO tntra_employees VALUES (127, 'Mitesh Thakkar', 49000, 4, SYSDATE);
 INSERT INTO tntra_employees VALUES (128, 'Jigar Shah', 50000, 4, SYSDATE);
 INSERT INTO tntra_employees VALUES (129, 'Deepak Rathod', 51000, 4, SYSDATE);
-
