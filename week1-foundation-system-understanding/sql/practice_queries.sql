@@ -51,3 +51,51 @@ UPDATE tntra_employees SET salary = salary + 2000 WHERE emp_name = 'Amaan Tai';
 
 -- 15. Delete employee record
 DELETE FROM tntra_employees WHERE emp_name = 'Devansh Joshi';
+
+-- 16. Employees whose name starts with A
+SELECT emp_name FROM tntra_employees WHERE emp_name LIKE 'A%';
+
+-- 17. Find names containing Patel
+SELECT emp_name FROM tntra_employees WHERE emp_name LIKE '%Patel%';
+
+-- 18. Employees whose salary is between 45000 and 50000
+SELECT emp_name, salary FROM tntra_employees WHERE salary BETWEEN 45000 AND 50000;
+
+-- 19. employees who belong to IFS or Java departments
+SELECT emp_name, dept_id FROM tntra_employees WHERE dept_id IN (2,3);
+
+-- 20. departments with average salary greater than 40000
+SELECT dept_id, AVG(salary) AS avg_salary FROM tntra_employees GROUP BY dept_id HAVING AVG(salary) > 40000;
+
+-- 21. Get top 10 employees by salary
+SELECT emp_name, salary FROM tntra_employees ORDER BY salary DESC FETCH FIRST 10 ROWS ONLY;
+
+-- 22. Inner Join
+SELECT 
+    e.emp_id,
+    e.emp_name,
+    d.dept_name,
+    e.salary
+FROM tntra_employees e
+INNER JOIN tntra_departments d
+ON e.dept_id = d.dept_id;
+
+-- 23. Employees with Department HR
+SELECT e.emp_name
+FROM tntra_employees e
+JOIN tntra_departments d
+ON e.dept_id = d.dept_id
+WHERE d.dept_name = 'HR';
+
+-- 24. Count Employees Per Department
+SELECT d.dept_name, COUNT(e.emp_id) AS total_employees
+FROM tntra_departments d
+LEFT JOIN tntra_employees e
+ON d.dept_id = e.dept_id
+GROUP BY d.dept_name;
+
+-- 25. Highest Salary Per Department
+SELECT dept_id, MAX(salary) AS highest_salary
+FROM tntra_employees 
+GROUP BY dept_id;
+
