@@ -99,3 +99,34 @@ SELECT dept_id, MAX(salary) AS highest_salary
 FROM tntra_employees 
 GROUP BY dept_id;
 
+-- 26. Employees hired in the last 30 days
+SELECT emp_name, hire_date
+FROM tntra_employees
+WHERE hire_date >= SYSDATE - 30;
+
+-- 27. Departments having more than 5 employees
+SELECT dept_id, COUNT(*) AS total_employees
+FROM tntra_employees
+GROUP BY dept_id
+HAVING COUNT(*) > 5;
+
+-- 28. Employees Whose Salary Is Above Their Department Average
+SELECT emp_name, salary, dept_id
+FROM tntra_employees e
+WHERE salary > (
+    SELECT AVG(salary)
+    FROM tntra_employees
+    WHERE dept_id = e.dept_id
+);
+
+-- 29. Department With the Most Employees
+SELECT dept_id, COUNT(emp_id) AS total_employees
+FROM tntra_employees
+GROUP BY dept_id
+ORDER BY total_employees DESC
+FETCH FIRST 1 ROW ONLY;
+
+-- 30. Employees Working in Technical Departments Only
+SELECT emp_name, dept_id
+FROM tntra_employees
+WHERE dept_id IN (2,3,4);
