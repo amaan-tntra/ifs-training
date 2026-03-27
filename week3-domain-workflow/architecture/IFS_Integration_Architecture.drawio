@@ -1,0 +1,85 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" version="29.6.6">
+  <diagram name="IFS Enterprise Architecture Final" id="C3q4-U6te0Li3IjviKsp">
+    <mxGraphModel dx="2102" dy="1500" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="iJXKNguQvGnb6vYOlT1P-1" parent="1" style="rounded=1;fillColor=#dae8fc;whiteSpace=wrap;" value="Client Layer&#xa;Aurena / External  Systems" vertex="1">
+          <mxGeometry height="80" width="400" x="300" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="iJXKNguQvGnb6vYOlT1P-2" parent="1" style="rounded=1;fillColor=#e1d5e7;" value="HTTP(S) REST / OData&#xa;Entry Point" vertex="1">
+          <mxGeometry height="80" width="400" x="300" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="iJXKNguQvGnb6vYOlT1P-3" parent="1" style="rounded=1;fillColor=#d5e8d4;" value="IFS Identity&#xa;OAuth2 + Permission  Sets" vertex="1">
+          <mxGeometry height="80" width="400" x="300" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="iJXKNguQvGnb6vYOlT1P-4" parent="1" style="rounded=1;fillColor=#fff2cc;" value="OData Provider&#xa;Request Routing" vertex="1">
+          <mxGeometry height="80" width="400" x="300" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="iJXKNguQvGnb6vYOlT1P-5" parent="1" style="rounded=1;fillColor=#f8cecc;fontStyle=1;" value="Projection&#xa;(EntitySets,  Actions, Functions)" vertex="1">
+          <mxGeometry height="90" width="400" x="300" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="iJXKNguQvGnb6vYOlT1P-6" parent="1" style="rounded=1;fillColor=#f5f5f5;" value="Projection Implementation" vertex="1">
+          <mxGeometry height="80" width="400" x="300" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="iJXKNguQvGnb6vYOlT1P-7" parent="1" style="rounded=1;fillColor=#d5e8d4;" value="Logical Unit (LU)&#xa;Business Logic" vertex="1">
+          <mxGeometry height="80" width="400" x="300" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="iJXKNguQvGnb6vYOlT1P-8" parent="1" style="rounded=1;fillColor=#dae8fc;" value="PL/SQL API Layer" vertex="1">
+          <mxGeometry height="80" width="400" x="300" y="750" as="geometry" />
+        </mxCell>
+        <mxCell id="iJXKNguQvGnb6vYOlT1P-9" parent="1" style="rounded=1;fillColor=#e1d5e7;" value="IFS Base Server (Foundation1)" vertex="1">
+          <mxGeometry height="80" width="400" x="300" y="860" as="geometry" />
+        </mxCell>
+        <mxCell id="iJXKNguQvGnb6vYOlT1P-10" parent="1" style="shape=cylinder;fillColor=#ffe6cc;align=center;verticalAlign=middle;" value="IFS Oracle Database" vertex="1">
+          <mxGeometry height="160" width="400" x="300" y="980" as="geometry" />
+        </mxCell>
+        <mxCell id="iJXKNguQvGnb6vYOlT1P-11" parent="1" style="rounded=1;fillColor=#ffffff;" value="Aurena Page" vertex="1">
+          <mxGeometry height="70" width="200" x="780" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="iJXKNguQvGnb6vYOlT1P-12" parent="1" style="rounded=1;fillColor=#ffffff;" value="LOV / Selector" vertex="1">
+          <mxGeometry height="70" width="200" x="50" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="iJXKNguQvGnb6vYOlT1P-13" parent="1" style="rounded=1;fillColor=#ffffff;" value="Permission Sets" vertex="1">
+          <mxGeometry height="70" width="200" x="750" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="iJXKNguQvGnb6vYOlT1P-14" edge="1" parent="1" source="iJXKNguQvGnb6vYOlT1P-1" style="endArrow=block;" target="iJXKNguQvGnb6vYOlT1P-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iJXKNguQvGnb6vYOlT1P-15" edge="1" parent="1" source="iJXKNguQvGnb6vYOlT1P-2" style="endArrow=block;" target="iJXKNguQvGnb6vYOlT1P-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iJXKNguQvGnb6vYOlT1P-16" edge="1" parent="1" source="iJXKNguQvGnb6vYOlT1P-3" style="endArrow=block;" target="iJXKNguQvGnb6vYOlT1P-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iJXKNguQvGnb6vYOlT1P-17" edge="1" parent="1" source="iJXKNguQvGnb6vYOlT1P-4" style="endArrow=block;" target="iJXKNguQvGnb6vYOlT1P-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iJXKNguQvGnb6vYOlT1P-18" edge="1" parent="1" source="iJXKNguQvGnb6vYOlT1P-5" style="endArrow=block;" target="iJXKNguQvGnb6vYOlT1P-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iJXKNguQvGnb6vYOlT1P-19" edge="1" parent="1" source="iJXKNguQvGnb6vYOlT1P-6" style="endArrow=block;" target="iJXKNguQvGnb6vYOlT1P-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iJXKNguQvGnb6vYOlT1P-20" edge="1" parent="1" source="iJXKNguQvGnb6vYOlT1P-7" style="endArrow=block;" target="iJXKNguQvGnb6vYOlT1P-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iJXKNguQvGnb6vYOlT1P-21" edge="1" parent="1" source="iJXKNguQvGnb6vYOlT1P-8" style="endArrow=block;" target="iJXKNguQvGnb6vYOlT1P-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iJXKNguQvGnb6vYOlT1P-22" edge="1" parent="1" source="iJXKNguQvGnb6vYOlT1P-9" style="endArrow=block;" target="iJXKNguQvGnb6vYOlT1P-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iJXKNguQvGnb6vYOlT1P-23" edge="1" parent="1" source="iJXKNguQvGnb6vYOlT1P-11" style="endArrow=block;" target="iJXKNguQvGnb6vYOlT1P-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iJXKNguQvGnb6vYOlT1P-24" edge="1" parent="1" source="iJXKNguQvGnb6vYOlT1P-12" style="endArrow=block;" target="iJXKNguQvGnb6vYOlT1P-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iJXKNguQvGnb6vYOlT1P-25" edge="1" parent="1" source="iJXKNguQvGnb6vYOlT1P-13" style="endArrow=block;" target="iJXKNguQvGnb6vYOlT1P-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

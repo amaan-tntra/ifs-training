@@ -4,6 +4,12 @@ This week focuses on understanding IFS domain workflow concepts, integration arc
 
 ---
 
+## 🏗 Integration Architecture Diagram
+
+![Integration Diagram](architecture/IFS_Integration_Architecture.png)
+
+---
+
 ## Topics Covered
 
 ### IFS Concepts
