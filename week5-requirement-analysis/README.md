@@ -37,6 +37,14 @@ Design a data migration approach for moving data from a source system to a targe
 
 ---
 
+## 🏗 Data Migration Workflow Diagram
+
+The following diagram illustrates the IFS Cloud aligned end-to-end migration workflow, including staging, migration jobs, validation, and production cutover.
+
+![Data Migration Workflow](migration-plan/data_migration_plan_workflow.png)
+
+---
+
 ## 🎯 Objective
 
 To understand how data is extracted, transformed, and loaded into a system while ensuring data integrity and consistency.

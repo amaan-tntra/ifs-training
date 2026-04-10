@@ -1,5 +1,9 @@
 # IFS Cloud Data Migration Plan
 
+## Migration Workflow Diagram
+
+![Migration Workflow](data_migration_plan_workflow.png)
+
 ## Objective
 
 Design a structured and repeatable approach for migrating business data from legacy/source systems into IFS Cloud while maintaining data integrity, business rule compliance, and auditability.
