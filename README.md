@@ -17,7 +17,34 @@ Each folder represents a weekly deliverable.
   - Git and version control basics
   - PL/SQL practice project (Department Analytics System)
 
-- **Week 3 – (to be added)**
+- **Week 3 – Domain Workflow Processes**
+  - IFS customization concepts
+  - IFS APIs and integrations (OData, REST)
+  - Projection concepts, Entity Sets, Selectors
+  - LoV filtering, page parameters
+  - Integration architecture design
+  - Aurena page (conceptual / documentation-based)
+  - Deliverables:
+    - Integration flow diagram
+    - Workflow and API notes
+
+- **Week 4 – Domain Deep Dive & System Exploration**
+  - IFS reporting and analytics (Quick Reports, SQL-based reporting)
+  - SQL optimization basics
+  - Data extraction concepts
+  - Docker fundamentals (containers, commands)
+  - Deliverables:
+    - Reporting SQL examples
+    - Notes on reporting, optimization, and Docker
+
+- **Week 5 – Requirement Analysis**
+  - Data migration concepts (IFS Cloud aligned)
+  - Data structures (tables, relationships, keys)
+  - Integration patterns (API, file-based, event-driven)
+  - Cloud fundamentals (AWS, Azure, infrastructure basics)
+  - Deliverables:
+    - Data Migration Plan
+    - Migration workflow diagram
 
 ## Technologies
 
@@ -26,3 +53,5 @@ Each folder represents a weekly deliverable.
 - DevOps concepts 
 - Oracle Database 
 - Git & GitHub
+- Docker
+- Cloud Basics (AWS / Azure)
